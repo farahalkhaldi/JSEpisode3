@@ -50,9 +50,11 @@ const hottestDays = (temperatures, threshhold) => {
  *       all previous functions
  *******************************************/
 const logHottestDays = (temperatures, threshhold) => {
-  const filtered = temperatures.filter(temp => temp > threshhold);
-  const C = filtered.map(temp => (temp - 32) * (5 / 9));
-  return C.forEach(temp => console.log(temp));
+  return logger(toCelsius(hottestDays(temperatures, threshhold)));
+
+  // const filtered = temperatures.filter(temp => temp > threshhold);
+  // const C = filtered.map(temp => (temp - 32) * (5 / 9));
+  // return C.forEach(temp => console.log(temp));
 };
 
 export { logger, toCelsius, hottestDays, logHottestDays };
