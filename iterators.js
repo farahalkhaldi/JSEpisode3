@@ -50,7 +50,7 @@ const hottestDays = (temperatures, threshhold) => {
  *       all previous functions
  *******************************************/
 const logHottestDays = (temperatures, threshhold) => {
-  return logger(toCelsius(hottestDays(temperatures, threshhold)));
+  logger(toCelsius(hottestDays(temperatures, threshhold)));
 
   // const filtered = temperatures.filter(temp => temp > threshhold);
   // const C = filtered.map(temp => (temp - 32) * (5 / 9));
